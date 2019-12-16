@@ -1,6 +1,6 @@
-const attendees = ['Henrique', 'Tomasz', 'Darragh', 'Sergii', 'Illia'];
+export const ATTENDEES = ['Henrique', 'Tomasz', 'Darragh', 'Sergii', 'Illia'];
 
 export const randomizer = (fn) => {
-  const presenter = attendees[fn.call()];
+  const presenter = ATTENDEES[fn.call()];
   return presenter;
 };
