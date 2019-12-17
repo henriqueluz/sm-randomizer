@@ -1,6 +1,11 @@
+export class Randomizer {
 
+  constructor(fnToRandom) {
+    this.fnToRandom = fnToRandom;
+  }
 
-export const randomizer = (fn, attendees = []) => {
-  const presenter = attendees[fn.call()];
-  return presenter;
-};
+  selectPresenter(attendees = []) {
+    return attendees[this.fnToRandom.call()];
+  }
+
+}
