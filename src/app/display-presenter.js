@@ -1,7 +1,7 @@
 import React from 'react';
 import Presenter from './presenter';
 
-export class Display extends React.Component {
+class Display extends React.Component {
   constructor(props) {
     super(props);
     this.state = { displayPresenter: false };

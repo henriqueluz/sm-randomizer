@@ -1,4 +1,4 @@
-export class Randomizer {
+class Randomizer {
 
   constructor(fnToRandom) {
     this.fnToRandom = fnToRandom;
@@ -9,3 +9,5 @@ export class Randomizer {
   }
 
 }
+
+export default Randomizer;
