@@ -1,24 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Hello!
+          <span className="label">Who will join standup?</span>
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <p>
+          <div>
+            <select id="scrum-master" multiple="true">
+              <option value="Darragh">Darragh</option>
+              <option value="Darragh">Henrique</option>
+              <option value="Darragh">Leszek</option>
+              <option value="Darragh">Tomasz</option>
+              <option value="Darragh">Ilya</option>
+            </select>
+          </div>
+        </p>
+        <p>
+          <button>Choose</button>
+        </p>
     </div>
   );
 }
