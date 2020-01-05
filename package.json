@@ -1,12 +1,20 @@
 {
   "name": "scrum-master-randomizer",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Selects scrum master presenter randomly",
   "author": "Henrique Luz",
   "private": true,
   "repository": {
     "type": "git",
     "url": "https://github.com/henriqueluz/sm-randomizer"
+  },
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.4.0",
+    "@testing-library/user-event": "^7.2.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-scripts": "3.3.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.5.5",
@@ -20,19 +28,24 @@
     "eslint-plugin-import": "^2.18.2",
     "jest": "^24.8.0"
   },
-  "jest": {
-    "modulePathIgnorePatterns": [
-      "package.json"
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test-ui": "react-scripts test",
+    "test": "jest --no-cache ./test/*",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
     ]
   },
-  "scripts": {
-    "test": "jest --no-cache ./test/*",
-    "watch": "jest --no-cache --watch ./*",
-    "lint": "eslint .",
-    "lint-test": "eslint . && jest --no-cache ./* "
-  },
-  "license": "MIT",
-  "dependencies": {
-    "@material-ui/core": "^4.8.0"
-  }
+  "license": "MIT"
 }
