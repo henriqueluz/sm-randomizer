@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import { Randomizer } from './app/randomizer';
+import Display from './app/display-presenter';
 
 const App = () => {
   return (
@@ -20,10 +21,14 @@ const App = () => {
           </div>
         </p>
         <p>
-          <button>Choose</button>
+          <Display />
         </p>
     </div>
   );
+}
+
+const showPresenter = () => {
+  return "Henrique Luz";
 }
 
 export default App;
