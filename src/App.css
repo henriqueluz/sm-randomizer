@@ -28,6 +28,12 @@
   text-align: center;
 }
 
+.show-presenter {
+  margin-top: 20px;
+  font-weight: 2000;
+  color: #158beb;
+}
+
 select {
   margin: 10px;
   font-size: 15px;

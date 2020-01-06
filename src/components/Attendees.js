@@ -6,13 +6,13 @@ class Attendees extends React.Component {
   }
 
   render() {
-    const attendees = ['Darragh', 'Henrique', 'Leszek', 'Ilya', 'Tomasz'];
+    const participants = ['Darragh', 'Henrique', 'Leszek', 'Ilya', 'Tomasz'];
 
     return (
-      <select id="scrum-master" multiple="true">
-        { attendees.map( attendee => {
+      <select id="scrum-master" onChange={this.props.handleChange} multiple="true">
+        { participants.map( participant => {
             return (
-              <option value={attendee}>{attendee}</option>
+              <option value={participant}>{participant}</option>
             );
           } )
         }

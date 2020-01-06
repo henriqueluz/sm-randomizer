@@ -1,27 +1,20 @@
 import React from 'react';
 import Presenter from './Presenter';
 
-class Display extends React.Component {
+class DisplayPresenter extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { displayPresenter: false };
-    this.handleClick = this.handleClick.bind(this);
-  }
-
-  handleClick() {
-    this.setState(state => ({
-      displayPresenter: !state.displayPresenter
-    }));
+    this.handleClick = props.handleClick;
   }
 
   render() {
     return (
       <div>
         <button onClick={this.handleClick}>Choose</button>
-        { this.state.displayPresenter ? <Presenter /> : null }
+        { this.props.displayPresenter ? <Presenter attendees={this.props.attendees} /> : null }
       </div>
     );
   }
 }
 
-export default Display;
+export default DisplayPresenter;

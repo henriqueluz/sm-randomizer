@@ -2,8 +2,12 @@ import React from 'react';
 import Randomizer from '../lib/randomizer';
 
 class Presenter extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
   show() {
-    const attendees = ['Darragh', 'Henrique', 'Illya', 'Leszek', 'Tomasz'];
+    const attendees = this.props.attendees;
     const randomizer = new Randomizer(() => Math.floor(Math.random() * attendees.length));
     return randomizer.selectPresenter(attendees);
   }
@@ -11,7 +15,7 @@ class Presenter extends React.Component {
   render() {
     return (
         <div id="presenter" className="show-presenter">
-            { this.show() }
+            { this.show() } will be ScrumMaster this turn.
         </div>
     );
   }
