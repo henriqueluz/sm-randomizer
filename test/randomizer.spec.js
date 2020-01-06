@@ -1,4 +1,4 @@
-import { Randomizer } from '../app/randomizer';
+import Randomizer from '../src/lib/randomizer';
 
 describe('Scrum master randomizer', () => {
   test('Selects presenter randomly', () => {

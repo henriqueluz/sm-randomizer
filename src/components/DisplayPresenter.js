@@ -1,5 +1,5 @@
 import React from 'react';
-import Presenter from './presenter';
+import Presenter from './Presenter';
 
 class Display extends React.Component {
   constructor(props) {

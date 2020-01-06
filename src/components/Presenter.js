@@ -1,5 +1,5 @@
 import React from 'react';
-import Randomizer from './randomizer';
+import Randomizer from '../lib/randomizer';
 
 class Presenter extends React.Component {
   show() {
@@ -11,7 +11,7 @@ class Presenter extends React.Component {
   render() {
     return (
         <div id="presenter" className="show-presenter">
-            {this.show()}
+            { this.show() }
         </div>
     );
   }
